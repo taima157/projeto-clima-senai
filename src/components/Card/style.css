@@ -1,0 +1,130 @@
+.Card {
+  background-color: #2C2F3F;
+  color: #ececec;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.city-date h2 {
+  font-size: 2.4em;
+}
+
+.city-date p {
+  color: #169DFF;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.clima {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.temperaturas {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.temperatura-num {
+  display: flex;
+  align-items: center;
+}
+
+.temperatura-num span {
+  font-size: 3.1em;
+  font-weight: bold;
+}
+
+.sensacao {
+  font-size: 14px;
+  font-weight: bold;
+  color: #169DFF;
+}
+
+.temperatura-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.temp-max-min {
+  color: #169DFF;
+}
+
+.div-imagem {
+  padding: 10px;
+}
+
+.proximos-dias {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 520px) {
+  .Card {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .proximos-dias {
+    gap: 5px;
+  }
+
+  .city-date h2 {
+    font-size: 2.2em;
+  }
+  .div-imagem img {
+    width: 40px;
+    height: 40px;
+  }
+  .div-imagem span {
+    font-size: 22px;
+  }
+
+  .temperatura-stats {
+    font-size: 12px;
+  }
+
+  .sensacao {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Card {
+    max-width: 315px;
+    width: 100%;
+  }
+
+  .city-date h2 {
+    font-size: 2em;
+  }
+  .div-imagem img {
+    width: 40px;
+    height: 40px;
+  }
+  .div-imagem span {
+    font-size: 20px;
+  }
+
+  .temperatura-stats {
+    font-size: 10px;
+  }
+
+  .sensacao {
+    font-size: 10px;
+  }
+}
