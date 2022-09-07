@@ -33,16 +33,16 @@ export default function CardProximos(props) {
   return (
     <div className="CardProximos">
       <p className="dia-semana">{diaSemana}</p>
-      <div className="div-imagem">
+      <div className="div-imagem-proximo">
         <img
           src={proximoDia.day.condition.icon}
           alt="Imagem clima"
           className="icon-clima"
         />
       </div>
-      <div className="temperaturas">
+      <div className="temperaturas-proximo">
         <p>
-          {proximoDia.day.maxtemp_c.toFixed()}°C
+          <span>{proximoDia.day.maxtemp_c.toFixed()}°C</span>
           <span>{proximoDia.day.mintemp_c.toFixed()}°C</span>
         </p>
       </div>
