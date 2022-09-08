@@ -36,9 +36,9 @@ export default function Card(props) {
   const hora = new Date().toLocaleTimeString();
   const diaSemana = String(date).substring(0, 3);
   const horaSemSeg = String(hora).substring(0, hora.length - 3);
-  const diaHora = `${semana[diaSemana]}, ${date.getDay()} de ${
-    meses[date.getMonth()]
-  } ${horaSemSeg}`;
+  const diaHora = `${semana[diaSemana]}, ${Number(
+    String(date).substring(7, 10)
+  )} de ${meses[date.getMonth()]} ${horaSemSeg}`;
 
   useEffect(() => {
     function setDatas() {
