@@ -93,7 +93,7 @@ export default function Card(props) {
       </div>
       <div className="proximos-dias">
         {proximosDias.map((proximo, index) => {
-          return <CardProximos key={index} proximo={proximo} dia={index + 1} />;
+          return <CardProximos key={index} proximo={proximo}/>;
         })}
       </div>
     </div>
